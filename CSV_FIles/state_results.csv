@@ -1,54 +1,54 @@
 state,coronavirus_numbers,daily_change
-Alabama,"156,698","1,043"
+Alabama,"156,698",954
 Alaska,"8,964",131
 Arizona,"219,778",703
-Arkansas,"85,779","1,124"
-California,"827,959","3,181"
-Colorado,"72,387",633
-Connecticut,"58,297",
-Delaware,"20,937",
-Florida,"711,796",
-Georgia,"304,406",
+Arkansas,"85,779",958
+California,"828,364","3,181"
+Colorado,"72,454",731
+Connecticut,"58,297",N/A
+Delaware,"20,937",150
+Florida,"711,796","2,660"
+Georgia,"304,406",N/A
 Hawaii,"12,754",105
-Idaho,,
-Illinois,,
-Indiana,,
-Iowa,,
-Kanasa,,
-Kentucky,,
-Louisiana,,
-Maine,,
-Maryland,,
-Massachusetts,,
-Michigan,,
-Minnesota,,
-Mississippi,,
-Missouri,,
-Montana,,
-Nebraska,,
-Nevada,,
-New Hampshire,,
-New Jersey,,
-New Mexico,,
-New York,,
-North Carolina,,
-North Dakota,,
-Ohio,,
-Oklahoma,,
-Oregon,,
-Pennsylvania,,
-Rhode Island,,
-South Carolina,,
-South Dakota,,
-Tennessee,,
-Texas,,
-Utah,,
-Vermont,,
-Virginia,,
-Washington,,
-West Virginia,,
-Wisconsin,,
-Wyoming,,
+Idaho,"43,528",613
+Illinois,"301,540","2,429"
+Indiana,"124,959","1,500"
+Iowa,"91,482",999
+Kansas,"62,378","1,338"
+Kentucky,"74,566",947
+Louisiana,"168,826",817
+Maine,"5,468",37
+Maryland,"126,711",714
+Massachusetts,"133,631",761
+Michigan,"140,057",993
+Minnesota,"101,419",N/A
+Mississippi,"99,558",672
+Missouri,"133,725","1,947"
+Montana,"14,044",418
+Nebraska,"46,977",792
+Nevada,"81,285",423
+New Hampshire,"8,534",217
+New Jersey,"208,416",740
+New Mexico,"30,000",N/A
+New York,"249,874",602
+North Carolina,"215,035","1,817"
+North Dakota,"22,697",476
+Ohio,"156,809","1,495"
+Oklahoma,"18,709",129
+Oregon,"34,180",311
+Pennsylvania,"166,270",N/A
+Rhode Island,"25,076",162
+South Carolina,"149,185",862
+South Dakota,"23,522",386
+Tennessee,"195,680","1,079"
+Texas,"793,645",N/A
+Utah,"75,175","1,076"
+Vermont,"1,768",13
+Virginia,"149,687",966
+Washington,"92,727",606
+West Virginia,"16,307",283
+Wisconsin,"134,996","2,820"
+Wyoming,"6,214",131
 ,,
 ,,
 ,,
