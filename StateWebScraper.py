@@ -35,10 +35,10 @@ driver = webdriver.PhantomJS('Drivers/phantomjs.exe')
 # Dataset Optimization
 pd.set_option('display.max_colwidth', None)
 pd.set_option('display.max_columns', None)
-normal_districts = pd.read_csv("CSV_Files/Company_CSV.csv")
+normal_districts = pd.read_csv("CSV_Files/state_information.csv")
 
 # CSV file for writing and viewing the results of CafrScraper.py
-county_report = pd.read_csv("CSV_Files/Company_Finances.csv")
+county_report = pd.read_csv("CSV_Files/state_results.csv")
 
 # Scrapes all the A tags in a layer and if cafr files are found, return the files. If not, store the filtered hrefs for another layer
 def layer_scraper(retrieved_hrefs, loc, scraping_layer, visited_websites):
@@ -356,7 +356,7 @@ county_list = []
 
 # External Dataset Variables for below for loop. Switch variables when using a different csv file
 website_dataset = normal_districts
-website_csv = "CSV_Files/Company_CSV.csv"
+website_csv = "CSV_Files/state_information.csv"
 
 # Gives the code a break every 50 search queries to prevent google search engine failure from suspicious activity
 count = 0
@@ -421,27 +421,6 @@ for index, row in website_dataset.iterrows():
         for num in range(0, 7):
             retrieved_websites_list.append(gresults[num]['link'])
     except Exception as ex:
-        print("INVALID SEARCH RESULTS (most likely due to an image search result)")
-        USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
-        headers = {"user-agent": USER_AGENT,
-                'Host': 'www.google.com',
-                'Referer': 'https://www.google.com/'}
-
-        query = search_term.replace(' ', '+')
-        URL = f"https://www.google.com/search?num=10&start=0&q={query}&client=ubuntu"     
-        request = urllib.request.Request(URL,None,headers) #The assembled reques
-        response = urllib.request.urlopen(request)
-        soup = BeautifulSoup(response.read().decode('utf-8'), "html.parser")
-
-        count = 0
-        for g in soup.find_all('div', class_='r'):
-            if (count == 7):
-                break
-            anchors = g.find_all('a')
-            if anchors:
-                link = anchors[0]['href']
-                title = g.find('h3').text
-                retrieved_websites_list.append(link)
                 count += 1
                 
     print(f"Retrieved_websites: {retrieved_websites_list}")
@@ -550,7 +529,7 @@ for index, row in website_dataset.iterrows():
     total += 1
 
     # print(county_report.county_name.to_string(index=False))
-    county_report.to_csv("CSV_Files/Company_Finances.csv", encoding='utf-8', index=None)
+    county_report.to_csv("CSV_Files/state_results.csv", encoding='utf-8', index=None)
     time.sleep(1)
 
 print()
